@@ -1,0 +1,363 @@
+:root {
+  --color-primary: #051f61;
+  --color-secondary: #0272bc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #999999;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  background-image: url("https://i.ibb.co/0jzD31y/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 615px;
+}
+.nav__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 40px 16px 0;
+}
+.nav__list li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.nav__link {
+  font-size: 12px;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+.heading {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  padding-top: 60px;
+  width: 300px;
+}
+.heading h1 {
+  font-size: 30px;
+  color: var(--color-primary);
+  line-height: 37px;
+}
+.heading p {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--color-primary);
+  line-height: 20px;
+}
+.cta__box {
+  margin-top: 30px;
+  font-size: 13px;
+}
+.cta__box .cta__box-btn {
+  padding: 10px 27px;
+  background: var(--color-secondary);
+  color: #fff;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+.cta__box .cta__box-link {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+/* @media only screen and (min-width: 400px) {
+  .heading {
+    text-align: center;
+  }
+
+  .cta__box .cta__box-btn,
+  .cta__box .cta__box-link {
+    display: block;
+    margin: 16px 0 0;
+    font-size: 16px;
+  }
+} */
+/* =========================== */
+.section-about {
+  padding: 60px 0 100px;
+  text-align: center;
+}
+.section-about h2 {
+  color: var(--color-primary);
+  font-size: 20px;
+}
+.section-about p {
+  font-size: 13px;
+  color: var(--color-primary);
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.about__cards {
+  padding-top: 40px;
+}
+.card {
+  display: inline-block;
+}
+
+.card:not(:last-child) {
+  margin-right: 85px;
+}
+.card h3 {
+  color: var(--color-primary);
+  font-size: 14px;
+  margin-top: 30px;
+}
+.section-about .card p {
+  font-size: 12px;
+  color: var(--color-primary);
+  line-height: 21px;
+}
+
+/* @media only screen and (min-width: 400px) {
+  .card {
+    display: block;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card:not(:last-child) {
+    margin-right: 85px;
+  }
+} */
+
+/* ----------------------- */
+.section-features {
+  background-color: #f8fcff;
+  position: relative;
+  text-align: right;
+}
+
+.section-features img {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+.features {
+  padding-top: 40px;
+}
+.feature-box {
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+}
+.feature-box h2 {
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-top: 45px;
+}
+.feature-box p {
+  color: var(--color-primary);
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 28px;
+}
+
+.features .feature__list {
+  width: 40%;
+  list-style-image: linear-gradient(#3095ce, #5a5dd8);
+  text-align: justify;
+  list-style-type: disc;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: top;
+}
+.feature-card {
+  text-align: left;
+}
+.feature-card:not(:first-child) {
+  margin-top: 40px;
+}
+.feature-card h3 {
+  font-size: 15px;
+  color: #021138;
+  display: inline-block;
+}
+.feature-card p {
+  margin-top: 10px;
+  line-height: 21px;
+}
+
+/* @media only screen and (min-width: 400px) {
+  .section-features {
+    text-align: center;
+  }
+  .section-features h2 {
+    margin: 0 auto;
+  }
+  .section-features img {
+    display: inline-block;
+    height: 560px;
+    width: 460px;
+    position: initial;
+  }
+  .feature-box {
+    margin-top: -50px;
+    width: 100%;
+  }
+  .features .feature__list {
+    padding-top: 40px;
+    width: 70%;
+    margin: 0 auto;
+  }
+} */
+
+/* @media only screen and (max-width: 400px) {
+  .section-features img {
+    position: absolute;
+    top: -15px;
+    left: 0;
+  }
+  .features {
+    padding-top: 40px;
+  }
+} */
+/* ======== */
+
+.section-downloads {
+  padding-top: 60px;
+}
+.left,
+.right {
+  display: inline-block;
+  width: 48%;
+}
+.right img {
+  width: 100%;
+  display: block;
+}
+.left {
+  text-align: center;
+  vertical-align: top;
+}
+.left h3 {
+  font-size: 20px;
+}
+.section-downloads p {
+  font-size: 12px;
+  color: var(--color-primary);
+  line-height: 21px;
+  margin-top: 10px;
+}
+.stores {
+  margin-top: 18px;
+}
+
+/* =============== */
+.section-get_updates {
+  display: inline-block;
+  transform: translateY(-30px);
+}
+.update__box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 475px;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 20px;
+}
+.update__box h4 {
+  font-size: 17px;
+  color: #132c6a;
+}
+.update__box p {
+  font-size: 12px;
+  line-height: 21px;
+  color: var(--color-primary);
+  margin-top: 10px;
+}
+.email-box {
+  display: inline-block;
+  margin-top: 18px 0;
+  width: 360px;
+  border: 1px solid #cad9e3;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+.update__box form .txt-box {
+  width: 240px;
+  padding: 16px 0 16px 19px;
+  border-radius: 5px;
+  border: none;
+}
+.update__box form .btn-sbmt {
+  background: var(--color-secondary);
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 5px;
+}
+/* ====== */
+.footer-section {
+  padding-top: 60px;
+  background: linear-gradient(to top, #f7fafe, #fff);
+  text-align: center;
+  font-size: 11px;
+}
+.footer-info {
+  padding-top: 20px;
+}
+.footer-info-box {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-info-box:not(:last-child) {
+  margin-right: 140px;
+}
+.footer-info-box:first-child {
+  padding-top: 40px;
+  font-size: 10px;
+}
+.footer-info h4 {
+  font-size: 12px;
+  line-height: 21px;
+  color: #515151;
+  margin-bottom: 18px;
+}
+
+.footer__list {
+  text-align: justify;
+}
+.footer__list li:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.footer__bottom {
+  padding: 20px 0;
+  text-align: right;
+  position: relative;
+}
+.footer__bottom .flag {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}
+.footer__bottom ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
